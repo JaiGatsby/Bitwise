@@ -8,5 +8,41 @@
 </head>
 <body background="..\Pictures/account.png">
 	
+<script>
+
+setInterval(loopy,3000);
+
+function loopy(){
+	var xmlhttp = new XMLHttpRequest();
+	var url = "http://api-m2x.att.com/v2/devices/5a8e7c2809addfc40b51675cc738efae/streams/test/values";
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+xmlhttp.open("GET", url, true);
+xmlhttp.setRequestHeader("Content-Type","application/json");
+xmlhttp.setRequestHeader("X-M2X-KEY","0e37bb4007437ee8490478073123e142");
+
+xmlhttp.send(null);
+}
+{
+
+	function myFunction(response) {
+    var obj = JSON.parse(response);
+	
+    document.getElementById("demo").innerHTML = obj.values[0].value;
+	
+	var rawData = ["0"];
+	for	(index = 0; index < obj.values.length; index++)
+	{
+		rawData.push(obj.values[index].value);
+	}
+
+	
+}
+}
+
+</script>
 </body>
 </html>
