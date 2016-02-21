@@ -1,0 +1,63 @@
+html{
+    background: url(Background copy.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:1300px;
+    height:2209px;
+}
+button {
+	background: transparent;
+	font-size:60px;
+	width: 120px;
+	height: 30px;
+}
+
+#butt1{
+	position: relative;
+	left: 570px;
+	top: 35px
+}
+#butt2{
+	position: relative;
+	left: 610px;
+	top: 35px
+}
+#butt3{
+	position: relative;
+	left: 650px;
+	top: 35px
+}
+#butt4{
+	position: relative;
+	left: 680px;
+	top: 35px
+}
+#butt5{
+	position: relative;
+	left: 700px;
+	top: 35px;
+}
+#butt6{
+	position: relative;
+	top: 2080px;
+	right: 310px;
+}
+#butt7{
+	position: relative;
+	top: 2080px;
+	right: 300px;
+}
+#butt8{
+	position: relative;
+	top: 2080px;
+	right: 750px;
+}
+#butt9{
+	position: relative;
+	top: 1140px;
+	left: 1000px;
+	width: 300px;
+	height: 60px;
+}
